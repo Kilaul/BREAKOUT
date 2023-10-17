@@ -29,18 +29,40 @@ public class BallMovement : MonoBehaviour
         if (collision.gameObject.tag == "PALA")
         {
             dirección = new Vector2(-dirección.x, -dirección.y);
+            float y = Random.Range(0f, 1f); //le ponemos "f" porque sin ella funciona de otra forma.
+            if (y > 0)
+            {
+                y = 1;
+            }
+            else
+            {
+                y = -1;
+            }
+            float x = Random.Range(-1f,-0.1f);
+            dirección = new Vector2(x, y);
         }
         if (collision.gameObject.tag == "PALA DERECHA")
         {
-            dirección = new Vector2(dirección.x, -dirección.y);
+            dirección = new Vector2(0, 0);
+            float y = Random.Range(0f, 1f); //le ponemos "f" porque sin ella funciona de otra forma.
+            if (y > 0)
+            {
+                y = 1;
+            }
+            else
+            {
+                y = -1;
+            }
+            float x = Random.Range(0.1f, 1f);
+            dirección = new Vector2(x, y);
         }
         if (collision.gameObject.tag == "PALA CENTRO")
         {
-            dirección = new Vector2(0, -dirección.y);
+            dirección = new Vector2(0, 1);
         }
         if (collision.gameObject.tag == "horizontal")
         {
-            dirección = new Vector2(-dirección.x, dirección.y);
+            dirección = new Vector2(dirección.x, -dirección.y);
         }
         if (collision.gameObject.tag == "destruir")
         {
@@ -48,8 +70,12 @@ public class BallMovement : MonoBehaviour
         }
         if (collision.gameObject.tag == "vacio")
         {
+         
             Spawn();
+
         }
+    
+
         void Spawn()
         {
             transform.position = new Vector3(0, 0, 0);
