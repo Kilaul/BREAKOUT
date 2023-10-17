@@ -8,7 +8,8 @@ public class BallMovement : MonoBehaviour
     public float velocity;
     public Vector2 dirección;
     public string tagColision = "destruir";
-
+    public Marcador punt;
+    public Score puntB;
     void Update()
     {
 
@@ -26,6 +27,7 @@ public class BallMovement : MonoBehaviour
         {
             dirección = new Vector2(dirección.x, -dirección.y);
         }
+
         if (collision.gameObject.tag == "PALA")
         {
             dirección = new Vector2(-dirección.x, -dirección.y);
@@ -67,14 +69,43 @@ public class BallMovement : MonoBehaviour
         if (collision.gameObject.tag == "destruir")
         {
             dirección = new Vector2(dirección.x, -dirección.y);
+            puntB.puntuaciónB += 1;
+        }
+        if (collision.gameObject.tag == "destruir2")
+        {
+            dirección = new Vector2(dirección.x, -dirección.y);
+            puntB.puntuaciónB += 2;
+        }
+        if (collision.gameObject.tag == "destruir_rojos")
+        {
+            dirección = new Vector2(dirección.x, -dirección.y);
+            puntB.puntuaciónB += 5;
+        }
+        if (collision.gameObject.tag == "destruir_rojos2")
+        {
+            dirección = new Vector2(dirección.x, -dirección.y);
+            puntB.puntuaciónB += 6;
+        }
+        if (collision.gameObject.tag == "destruir_naranjas")
+        {
+            dirección = new Vector2(dirección.x, -dirección.y);
+            puntB.puntuaciónB += 3;
+        }
+        if (collision.gameObject.tag == "destruir_naranjas2")
+        {
+            dirección = new Vector2(dirección.x, -dirección.y);
+            puntB.puntuaciónB += 4;
         }
         if (collision.gameObject.tag == "vacio")
         {
-         
+            
+            punt.puntuaciónA -= 1; //también está ++ o = punt.puntuación + 1
             Spawn();
+            Debug.Log("Gol izquierdo");
+
 
         }
-    
+
 
         void Spawn()
         {

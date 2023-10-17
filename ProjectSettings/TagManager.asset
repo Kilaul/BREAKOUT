@@ -13,6 +13,11 @@ TagManager:
   - ball
   - PALA DERECHA
   - PALA CENTRO
+  - destruir_rojos
+  - destruir_naranjas
+  - destruir2
+  - destruir_naranjas2
+  - destruir_rojos2
   layers:
   - Default
   - TransparentFX
