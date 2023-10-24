@@ -1263,7 +1263,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 243841304}
         m_TargetAssemblyTypeName: menuprincipalhard, Assembly-CSharp
-        m_MethodName: PLAY
+        m_MethodName: PLAY2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
