@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject game;
 
-    public int vidas = 3;
+    public int vidas = 4;
     public int puntuacion = 0;
 
     void Awake()

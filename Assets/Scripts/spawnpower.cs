@@ -1,16 +1,17 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-
-public class RomperYSpawnee : MonoBehaviour
+public class spawnpower : MonoBehaviour
 {
-    public GameObject AMARILLOpower;
-    public GameObject powerupA;
+    public GameObject AMARILLO;
+    public GameObject powerup1;
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject == AMARILLOpower)
+        if (collision.gameObject == AMARILLO)
         {
-            Destroy(AMARILLOpower);
-            Instantiate(powerupA, AMARILLOpower.transform.position, AMARILLOpower.transform.rotation);
+           
+           Instantiate(powerup1, AMARILLO.transform.position, AMARILLO.transform.rotation);
         }
     }
 }

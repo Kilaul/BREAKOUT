@@ -101,7 +101,7 @@ public class BallMovement : MonoBehaviour
             
             punt.puntuaciónA -= 1; //también está ++ o = punt.puntuación + 1
             Spawn();
-            Debug.Log("Gol izquierdo");
+            
 
 
         }
