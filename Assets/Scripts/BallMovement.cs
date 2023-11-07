@@ -10,6 +10,7 @@ public class BallMovement : MonoBehaviour
     public string tagColision = "destruir";
     public Marcador punt;
     public Score puntB;
+    public bool SPAWN;
     void Update()
     {
 
@@ -100,8 +101,15 @@ public class BallMovement : MonoBehaviour
         {
             
             punt.puntuaciónA -= 1; //también está ++ o = punt.puntuación + 1
-            Spawn();
+            if (SPAWN)
+              { 
+                Spawn(); 
+            }
             
+           else
+            {
+                Dissapear();
+            }
 
 
         }
@@ -123,6 +131,20 @@ public class BallMovement : MonoBehaviour
             dirección = new Vector2(x, y);
         }
            
+        void Dissapear()
+        {
+            float y = Random.Range(-1f, 0); //le ponemos "f" porque sin ella funciona de otra forma.
+            if (y > 0)
+            {
+                y = 1;
+            }
+            else
+            {
+                y = -1;
+                Destroy(gameObject);
+            }
+            
+        }
     }
 }
  

@@ -20,7 +20,7 @@ TagManager:
   - destruir_rojos2
   - destruir naranja
   - powerup1
-  - BALL1
+  - ball1
   layers:
   - Default
   - TransparentFX
