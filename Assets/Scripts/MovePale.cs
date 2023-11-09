@@ -12,10 +12,13 @@ public class MovePale : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     
-        float horizontal = Input.GetAxis("Horizontal");
-        transform.position = transform.position + new Vector3(horizontal, 0 , 0) * velocity;
-        Debug.Log(horizontal);
-       
+        float horizontal = 0;
+        {
+
+
+            horizontal = Input.GetAxis("Horizontal");
+            transform.position = transform.position + new Vector3(horizontal, 0, 0) * velocity * Time.deltaTime;
+        }
+        
     }
 }
