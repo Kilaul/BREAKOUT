@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: -2840942502406023141}
   - component: {fileID: 7689449990921044056}
   m_Layer: 0
-  m_Name: powerup1
-  m_TagString: powerup1
+  m_Name: powerup3
+  m_TagString: powerup3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.3490566, g: 0.027990391, b: 0.072618425, a: 1}
+  m_Color: {r: 0.0039215763, g: 0.035208806, b: 0.3764706, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

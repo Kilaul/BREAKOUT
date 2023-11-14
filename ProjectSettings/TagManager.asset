@@ -21,6 +21,8 @@ TagManager:
   - destruir naranja
   - powerup1
   - ball1
+  - powerup2
+  - powerup3
   layers:
   - Default
   - TransparentFX
