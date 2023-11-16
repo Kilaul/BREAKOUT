@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class powerup1 : MonoBehaviour
 {
     public string rojo = "powerup1";
     public string verde = "powerup2";
+    public string azul = "powerup3";
     public GameObject BALL1;
+    public GameObject ball;
     public GameObject POW;
     public Marcador punt;
     public Vector2 dirección;
@@ -37,6 +40,8 @@ public class powerup1 : MonoBehaviour
 
 
         }
+
+
         if (collision.tag == verde)
 
         {
@@ -54,6 +59,28 @@ public class powerup1 : MonoBehaviour
             dirección = new Vector2(0, -1);
 
 
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+        if (collision.tag == verde)
+
+        {
+
+
+
+            Destroy(POW);
+            
 
 
 
