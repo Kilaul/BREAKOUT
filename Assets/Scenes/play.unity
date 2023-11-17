@@ -2792,7 +2792,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rojo: powerup1
   verde: powerup2
+  azul: powerup3
   BALL1: {fileID: 906669315}
+  ball: {fileID: 0}
   POW: {fileID: 4418315312488104748, guid: 84fc2adcb3a92f14a8178322af12e7d9, type: 3}
   punt: {fileID: 397138600}
   "direcci\xF3n": {x: 0, y: 0}
@@ -3347,8 +3349,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 613012042}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.04392, y: -0, z: 0}
-  m_LocalScale: {x: 1.0911753, y: 1.0018551, z: 1}
+  m_LocalPosition: {x: 1.0439, y: -0.007, z: 0}
+  m_LocalScale: {x: 1.0912608, y: 0.98672837, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 562867146}
@@ -3465,7 +3467,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rojo: powerup1
   verde: powerup2
+  azul: powerup3
   BALL1: {fileID: 906669315}
+  ball: {fileID: 0}
   POW: {fileID: 4418315312488104748, guid: 84fc2adcb3a92f14a8178322af12e7d9, type: 3}
   punt: {fileID: 397138600}
   "direcci\xF3n": {x: 0, y: 0}
@@ -3588,7 +3592,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -13.4, y: 6.34}
+  m_AnchoredPosition: {x: -12.735, y: -2.676}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &676339234
@@ -4224,8 +4228,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 895827053}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.9569, y: -0, z: 0}
-  m_LocalScale: {x: 0.92546666, y: 1.0018551, z: 1}
+  m_LocalPosition: {x: -0.9596, y: -0.005, z: 0}
+  m_LocalScale: {x: 0.9199817, y: 0.99174947, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 562867146}
@@ -4342,7 +4346,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rojo: powerup1
   verde: powerup2
+  azul: powerup3
   BALL1: {fileID: 906669315}
+  ball: {fileID: 0}
   POW: {fileID: 4418315312488104748, guid: 84fc2adcb3a92f14a8178322af12e7d9, type: 3}
   punt: {fileID: 397138600}
   "direcci\xF3n": {x: 0, y: 0}
@@ -7937,7 +7943,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 5.88, y: 1.52}
+  m_AnchoredPosition: {x: 5.737, y: -0.639}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1585681732
